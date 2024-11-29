@@ -1,4 +1,4 @@
-\import pandas as pd
+import pandas as pd
 from matplotlib import pyplot as pt
 import numpy as np
 
@@ -67,7 +67,7 @@ def train():
         graph_x.append(i)
         graph_y.append(obj.result)
 
-# train()
+train()
 ax.plot(graph_x,graph_y,c="r")
 ax.set_ylabel("cost_error")
 ax.set_xlabel("iteration")
